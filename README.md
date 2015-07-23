@@ -76,7 +76,7 @@ This command will create a new Compass project with `styles.scss` file, which im
 
 To install `purecss-sass` Bower package execute this command:
 ```
-bower install purecss-sass
+bower install purecss-sass#0.6.0+1
 ```
 
 Then you will have a local copy of `scss` stylesheets to use in your project.
