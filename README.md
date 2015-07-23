@@ -11,6 +11,7 @@ This project is heavily inspired from [bootstrap-sass](https://github.com/twbs/b
 
 ## Installation
 
+
 ### Ruby on Rails
 
 Add this line to your Rails application's Gemfile:
@@ -70,6 +71,15 @@ compass create project-name -r purecss-sass --using purecss
 ```
 
 This command will create a new Compass project with `styles.scss` file, which imports Pure components.
+
+### Bower
+
+To install `purecss-sass` Bower package execute this command:
+```
+bower install purecss-sass
+```
+
+Then you will have a local copy of `scss` stylesheets to use in your project.
 
 ## Usage
 
