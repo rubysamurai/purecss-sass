@@ -1,0 +1,25 @@
+{
+  "name": "purecss-sass",
+  "version": "0.6.0",
+  "description": "Pure CSS framework by Yahoo, converted to Sass and ready to use in Sass powered applications",
+  "keywords": [
+    "pure",
+    "scss",
+    "sass"
+  ],
+  "homepage": "https://github.com/rubysamurai/purecss-sass",
+  "bugs": {
+    "url": "https://github.com/rubysamurai/purecss-sass/issues"
+  },
+  "license": "MIT",
+  "author": "Dmitriy Tarasov",
+  "files": [
+    "vendor",
+    "LICENSE.txt"
+  ],
+  "main": "vendor/assets/stylesheets/_purecss.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubysamurai/purecss-sass.git"
+  }
+}
