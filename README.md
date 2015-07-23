@@ -1,6 +1,7 @@
 # Pure CSS for Sass
 
 [![Gem Version](https://badge.fury.io/rb/purecss-sass.svg)](http://badge.fury.io/rb/purecss-sass)
+[![npm version](https://badge.fury.io/js/purecss-sass.svg)](http://badge.fury.io/js/purecss-sass)
 [![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=v0.6.0)](https://travis-ci.org/rubysamurai/purecss-sass)
 
 `purecss-sass` is a Sass-powered version of [Pure](https://github.com/yahoo/pure/) CSS framework by Yahoo for your Ruby projects. It works with Ruby on Rails, Compass, Sprockets etc.
