@@ -11,6 +11,11 @@ This project is heavily inspired from [bootstrap-sass](https://github.com/twbs/b
 
 ## Installation
 
+* [Ruby on Rails](#ruby-on-rails)
+* [Compass](#compass)
+* [Bower](#bower)
+* [npm](#npm)
+
 
 ### Ruby on Rails
 
@@ -80,6 +85,15 @@ bower install purecss-sass#0.6.0+1
 ```
 
 Then you will have a local copy of `scss` stylesheets to use in your project.
+
+### npm
+
+To install `purecss-sass` npm package execute this command:
+```
+npm install purecss-sass
+```
+
+This will fetch latest version of `scss` stylesheets to drop into your Sass powered application.
 
 ## Usage
 
