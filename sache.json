@@ -1,0 +1,5 @@
+{
+  "name": "purecss-sass",
+  "description": "Pure CSS framework by Yahoo, converted to Sass and ready to use in Sass powered applications",
+  "tags": ["pure", "grid", "buttons", "forms", "navigation", "menu", "tables", "ui", "responsive"]
+}
