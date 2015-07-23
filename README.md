@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/purecss-sass.svg)](http://badge.fury.io/js/purecss-sass)
 [![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=v0.6.0)](https://travis-ci.org/rubysamurai/purecss-sass)
 
-`purecss-sass` is a Sass-powered version of [Pure](https://github.com/yahoo/pure/) CSS framework by Yahoo for your Ruby projects. It works with Ruby on Rails, Compass, Sprockets etc.
+`purecss-sass` is a Sass-powered version of [Pure](https://github.com/yahoo/pure/) CSS framework by Yahoo for your Sass powered applications. It works with Ruby on Rails, Compass, Sprockets, Bower, npm etc.
 
 Original CSS files are converted using `sass-convert` and otherwise untouched and unmodified.
 
