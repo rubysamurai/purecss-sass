@@ -1,0 +1,28 @@
+{
+  "name": "purecss-sass",
+  "homepage": "https://github.com/rubysamurai/purecss-sass",
+  "authors": [
+    "Dmitriy Tarasov"
+  ],
+  "description": "Pure CSS framework by Yahoo, converted to Sass and ready to use in Sass powered applications",
+  "main": "vendor/assets/stylesheets/_purecss.scss",
+  "keywords": [
+    "pure",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bin",
+    "lib",
+    "spec",
+    "templates",
+    "CHANGELOG.md",
+    "Gemfile",
+    "README.md",
+    "Rakefile",
+    "purecss-sass.gemspec",
+    "sache.json"
+  ]
+}
