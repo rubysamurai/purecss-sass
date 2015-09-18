@@ -33,7 +33,7 @@ Open `/app/assets/stylesheets/application.scss` file and add this line:
 @import 'purecss';
 ```
 
-> Note: Default Rails installation comes with `.css` file extension for stylesheet assests files, make sure you change it to `.scss` and remove all the `//= require` and `//= require_tree` statements from file. Alternatively, to keep original `application.css` file, you can create `custom.scss` file in the same folder and import `purecss` there.
+> Note: Default Rails installation comes with `.css` file extension for stylesheet assests files, make sure you change it to `.scss` and remove all the `*= require_tree .` and `*= require_self` statements from file. Alternatively, to keep original `application.css` file, you can create `custom.scss` file in the same folder and import `purecss` there.
 
 Restart Rails web server if it was running and now your Rails application is powered by Pure CSS for Sass.
 
