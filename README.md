@@ -13,7 +13,6 @@ Original Pure CSS files are converted using `sass-convert` and otherwise untouch
 ## Installation
 
 * [Ruby on Rails](#ruby-on-rails)
-* [Compass](#compass)
 * [Bower](#bower)
 * [npm](#npm)
 
@@ -36,46 +35,6 @@ Open `/app/assets/stylesheets/application.scss` file and add this line:
 > Note: Default Rails installation comes with `.css` file extension for stylesheet assests files, make sure you change it to `.scss` and remove all the `*= require_tree .` and `*= require_self` statements from file. Alternatively, to keep original `application.css` file, you can create `custom.scss` file in the same folder and import `purecss` there.
 
 Restart Rails web server if it was running and now your Rails application is powered by Pure CSS for Sass.
-
-### Compass
-
-To use Compass extension you'll need to install `purecss-sass` gem:
-
-```
-gem install purecss-sass
-```
-
-#### Existing Compass project
-
-If you have an existing Compass project, open `config.rb` file and require `purecss-sass` there:
-
-```ruby
-require 'purecss-sass'
-```
-
-Navigate to your project's folder and run command:
-
-```
-compass install purecss -r purecss-sass
-```
-
-This will create new file `styles.scss`, that imports all of Pure components.
-
-Instead of the install command provided above, you can manually import `purecss`:
-
-```
-@import 'purecss';
-```
-
-#### New Compass project
-
-If you are creating a new Compass project and wish to include `purecss-sass`, run command:
-
-```
-compass create project-name -r purecss-sass --using purecss
-```
-
-This command will create a new Compass project with `styles.scss` file, that imports all of Pure components.
 
 ### Bower
 

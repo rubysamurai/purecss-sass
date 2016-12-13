@@ -2,9 +2,7 @@ module Purecss
   module Sass
     class << self
       def load!
-        if defined?(::Compass::Frameworks)
-          register_compass_extension
-        elsif defined?(::Rails)
+        if defined?(::Rails)
           register_rails_engine
         elsif defined?(::Sprockets)
           register_sprockets
@@ -27,18 +25,6 @@ module Purecss
           require 'sass'
 
           ::Sass.load_paths << stylesheets_path
-        end
-
-        def register_compass_extension
-          require 'purecss/sass/version'
-
-          ::Compass::Frameworks.register(
-            'purecss',
-            version:               Purecss::Sass::VERSION,
-            path:                  gem_path,
-            stylesheets_directory: stylesheets_path,
-            templates_directory:   File.join(gem_path, 'templates')
-          )
         end
 
         def register_rails_engine
