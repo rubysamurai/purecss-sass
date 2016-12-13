@@ -1,7 +1,8 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'purecss-sass'
+ENV['RAILS_ENV'] ||= 'test'
 
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+require File.expand_path('../support/dummy_rails_app/config/environment.rb', __FILE__)
+require 'purecss-sass'
 
 RSpec.configure do |config|
   config.before(:suite) do
