@@ -1,6 +1,6 @@
 /*!
-Pure v0.6.0
-Copyright 2014 Yahoo! Inc. All rights reserved.
+Pure v0.6.1
+Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/yahoo/pure/blob/master/LICENSE.md
 */
@@ -21,8 +21,6 @@ so we can ignore the csslint warning.
       box-shadow: inset 0 1px 3px #ddd;
       border-radius: 4px;
       vertical-align: middle;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
   }
@@ -34,8 +32,6 @@ so we can ignore the csslint warning.
     box-shadow: inset 0 1px 3px #ddd;
     border-radius: 4px;
     vertical-align: middle;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -46,8 +42,6 @@ so we can ignore the csslint warning.
       border: 1px solid #ccc;
       box-shadow: inset 0 1px 3px #ddd;
       border-radius: 4px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
 
@@ -295,6 +289,10 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
   .pure-input-1 {
     width: 100%;
+  }
+
+  .pure-input-3-4 {
+    width: 75%;
   }
 
   .pure-input-2-3 {
