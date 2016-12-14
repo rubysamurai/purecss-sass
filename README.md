@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/purecss-sass.svg)](http://badge.fury.io/rb/purecss-sass)
 [![npm version](https://badge.fury.io/js/purecss-sass.svg)](http://badge.fury.io/js/purecss-sass)
-[![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=v0.6.0)](https://travis-ci.org/rubysamurai/purecss-sass)
+[![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=master)](https://travis-ci.org/rubysamurai/purecss-sass)
 
 Yahoo's [Pure](http://purecss.io/) is a set of small, responsive CSS modules that you can use in every web project.
 
@@ -40,7 +40,7 @@ Restart Rails web server if it was running and now your Rails application is pow
 
 To install `purecss-sass` Bower package execute this command:
 ```
-bower install purecss-sass#0.6.0+1
+bower install purecss-sass
 ```
 
 Then you will have a local copy of `purecss-sass` stylesheets to use in your application.
@@ -64,7 +64,6 @@ You can import individual Sass components like this:
 @import 'purecss/base';
 @import 'purecss/buttons';
 @import 'purecss/forms';
-@import 'purecss/forms-nr';
 @import 'purecss/grids';
 @import 'purecss/grids-responsive';
 @import 'purecss/menus';

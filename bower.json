@@ -8,6 +8,7 @@
   "main": "vendor/assets/stylesheets/_purecss.scss",
   "keywords": [
     "pure",
+    "purecss",
     "sass",
     "scss"
   ],
@@ -17,12 +18,10 @@
     "bin",
     "lib",
     "spec",
-    "templates",
     "CHANGELOG.md",
     "Gemfile",
     "README.md",
     "Rakefile",
     "purecss-sass.gemspec",
-    "sache.json"
   ]
 }
