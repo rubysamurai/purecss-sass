@@ -35,10 +35,10 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   color: $pure-button-color-ie;
 
   /* rgba supported */
-  border: $pure-button-rgba;
+  border: $pure-button-border-rgb;
 
   /*IE 6/7/8*/
-  border: $pure-button-color-ieold;
+  border: $pure-button-border-ieold;
 
   /*IE9 + everything else*/
   background-color:$pure-button-color-ie-nineplus;
