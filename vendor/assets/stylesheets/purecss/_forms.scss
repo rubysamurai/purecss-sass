@@ -17,8 +17,8 @@ so we can ignore the csslint warning.
     &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"] {
       padding: 0.5em 0.6em;
       display: inline-block;
-      border: 1px solid #ccc;
-      box-shadow: inset 0 1px 3px #ddd;
+      border: pure-form-input-border;
+      box-shadow:$pure-form-input-box-shadow;
       border-radius: 4px;
       vertical-align: middle;
       box-sizing: border-box;
@@ -28,8 +28,8 @@ so we can ignore the csslint warning.
   select, textarea {
     padding: 0.5em 0.6em;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
+    border: $pure-form-select-border;
+    box-shadow: $pure-form-select-box-shadow;
     border-radius: 4px;
     vertical-align: middle;
     box-sizing: border-box;
@@ -39,8 +39,8 @@ so we can ignore the csslint warning.
     &:not([type]) {
       padding: 0.5em 0.6em;
       display: inline-block;
-      border: 1px solid #ccc;
-      box-shadow: inset 0 1px 3px #ddd;
+      border: $pure-form-input-not-border;
+      box-shadow: $pure-form-input-not-box-shadow;
       border-radius: 4px;
       box-sizing: border-box;
     }
@@ -51,24 +51,24 @@ so we can ignore the csslint warning.
 
     &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="week"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="color"]:focus {
       outline: 0;
-      border-color: #129FEA;
+      border-color: $pure-form-input-focus-border-color;
     }
   }
 
   select:focus, textarea:focus {
     outline: 0;
-    border-color: #129FEA;
+    border-color: $pure-form-select-focus-border-color;
   }
 
   input {
     &:not([type]):focus {
       outline: 0;
-      border-color: #129FEA;
+      border-color: $pure-form-not-focus-border-color;
     }
 
     &[type="file"]:focus, &[type="radio"]:focus, &[type="checkbox"]:focus {
-      outline: thin solid #129FEA;
-      outline: 1px auto #129FEA;
+      outline: $pure-form-input-file-outline;
+      outline: $pure-form-input-file-outline-new;
     }
   }
 
@@ -80,61 +80,61 @@ so we can ignore the csslint warning.
   input {
     &[type="text"][disabled], &[type="password"][disabled], &[type="email"][disabled], &[type="url"][disabled], &[type="date"][disabled], &[type="month"][disabled], &[type="time"][disabled], &[type="datetime"][disabled], &[type="datetime-local"][disabled], &[type="week"][disabled], &[type="number"][disabled], &[type="search"][disabled], &[type="tel"][disabled], &[type="color"][disabled] {
       cursor: not-allowed;
-      background-color: #eaeded;
-      color: #cad2d3;
+      background-color: $pure-form-input-background-color;
+      color: $pure-form-input-color;
     }
   }
 
   select[disabled], textarea[disabled] {
     cursor: not-allowed;
-    background-color: #eaeded;
-    color: #cad2d3;
+    background-color: $pure-input-disabled-background-color;
+    color: $pure-input-disabled-color;
   }
 
   input {
     &:not([type])[disabled] {
       cursor: not-allowed;
-      background-color: #eaeded;
-      color: #cad2d3;
+      background-color: $pure-input-disabled-background-color;
+      color: $pure-input-disabled-color;
     }
 
     &[readonly] {
-      background-color: #eee;
+      background-color:$pure-input-readonly-background-color; 
 
       /* menu hover bg color */
-      color: #777;
+      color: $pure-input-readonly-color;
 
       /* menu text color */
-      border-color: #ccc;
+      border-color:$pure-input-readonly-border-color;
     }
   }
 
   select[readonly], textarea[readonly] {
-    background-color: #eee;
+    background-color: $pure-input-readonly-background-color;
 
     /* menu hover bg color */
-    color: #777;
+    color: $pure-input-readonly-color;
 
     /* menu text color */
-    border-color: #ccc;
+    border-color: $pure-input-readonly-border-color;
   }
 
   input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
-    color: #b94a48;
-    border-color: #e9322d;
+    color: $pure-input-invalid-color;
+    border-color: $pure-input-invalid-border-color;
   }
 
   input {
     &[type="file"]:focus:invalid:focus, &[type="radio"]:focus:invalid:focus, &[type="checkbox"]:focus:invalid:focus {
-      outline-color: #e9322d;
+      outline-color: $pure-input-invalid-outline;
     }
   }
 
   select {
     /* Normalizes the height; padding is not sufficient. */
     height: 2.25em;
-    border: 1px solid #ccc;
-    background-color: white;
+    border: $pure-form-select-border;
+    background-color: $pure-form-select-background-color;
 
     &[multiple] {
       height: auto;
@@ -156,8 +156,8 @@ so we can ignore the csslint warning.
     width: 100%;
     padding: 0.3em 0;
     margin-bottom: 0.3em;
-    color: #333;
-    border-bottom: 1px solid #e5e5e5;
+    color: $pure-form-legend-color;
+    border-bottom: $pure-form-legend-border-bottom;
   }
 }
 
@@ -314,7 +314,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   .pure-help-inline {
     display: inline-block;
     padding-left: 0.3em;
-    color: #666;
+    color: $pure-form-pure-help-inline-color;
     vertical-align: middle;
     font-size: 0.875em;
   }
@@ -328,7 +328,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-form-message-inline {
   display: inline-block;
   padding-left: 0.3em;
-  color: #666;
+  color: $pure-form-message-inline-color;
   vertical-align: middle;
   font-size: 0.875em;
 }
@@ -337,7 +337,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .pure-form-message {
   display: block;
-  color: #666;
+  color: $pure-form-message-color;
   font-size: 0.875em;
 }
 

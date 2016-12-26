@@ -133,7 +133,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 /* misc default styling */
 
 .pure-menu-separator {
-  background-color: #ccc;
+  background-color: $pure-menu-seperator-background-color;
   height: 1px;
   margin: .3em 0;
 }
@@ -146,15 +146,15 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
 .pure-menu-heading {
   text-transform: uppercase;
-  color: #565d64;
+  color: $pure-menu-heading-color;
 }
 
 .pure-menu-link {
-  color: #777;
+  color: $pure-menu-link-color;
 }
 
 .pure-menu-children {
-  background-color: #fff;
+  background-color: $pure-menu-children-background-color;
 }
 
 .pure-menu-link, .pure-menu-disabled, .pure-menu-heading {
@@ -170,19 +170,19 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 }
 
 .pure-menu-active > .pure-menu-link {
-  background-color: #eee;
+  background-color:$pure-menu-active-background-color;
 }
 
 .pure-menu-link {
   &:hover, &:focus {
-    background-color: #eee;
+    background-color: $pure-menu-active-background-color;
   }
 }
 
 .pure-menu-selected .pure-menu-link {
-  color: #000;
+  color: $pure-menu-selected-color;
 
   &:visited {
-    color: #000;
+    color: $pure-menu-selected-color;
   }
 }
