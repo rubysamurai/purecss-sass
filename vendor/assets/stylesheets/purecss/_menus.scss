@@ -1,5 +1,5 @@
 /*!
-Pure v0.6.1
+Pure v0.6.2
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/yahoo/pure/blob/master/LICENSE.md
@@ -138,11 +138,26 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   margin: .3em 0;
 }
 
-.pure-menu-horizontal .pure-menu-separator {
-  width: 1px;
-  height: 1.3em;
-  margin: 0 0.3em;
+.pure-menu-horizontal {
+  .pure-menu-children .pure-menu-separator {
+    background-color: #ccc;
+    height: 1px;
+    margin: .3em 0;
+  }
+
+  .pure-menu-separator {
+    width: 1px;
+    height: 1.3em;
+    margin: 0 0.3em;
+  }
+
+  .pure-menu-children .pure-menu-separator {
+    display: block;
+    width: auto;
+  }
 }
+
+/* Need to reset the separator since submenu is vertical */
 
 .pure-menu-heading {
   text-transform: uppercase;

@@ -1,5 +1,5 @@
 /*!
-Pure v0.6.1
+Pure v0.6.2
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/yahoo/pure/blob/master/LICENSE.md
@@ -25,7 +25,45 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
     padding: 0;
     border: 0;
   }
+}
 
+/* Firefox: Get rid of the inner focus border */
+
+/* Inherit .pure-g styles */
+
+.pure-button-group {
+  letter-spacing: -0.31em;
+
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+.opera-only :-o-prefocus {
+  word-spacing: -0.43em;
+}
+
+.pure-button-group {
+  word-spacing: -0.43em;
+
+  .pure-button {
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+  }
+}
+
+/*csslint outline-none:false*/
+
+.pure-button {
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
@@ -45,10 +83,6 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   text-decoration: none;
   border-radius: 2px;
 }
-
-/* Firefox: Get rid of the inner focus border */
-
-/*csslint outline-none:false*/
 
 .pure-button-hover {
   /* csslint ignore:start */
@@ -147,5 +181,27 @@ a {
   &.pure-button-primary, &.pure-button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
+  }
+}
+
+/* Button Groups */
+
+.pure-button-group .pure-button {
+  margin: 0;
+  border-radius: 0;
+  border-right: 1px solid #111;
+
+  /* fallback color for rgba() for IE7/8 */
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+  &:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-right: none;
   }
 }
