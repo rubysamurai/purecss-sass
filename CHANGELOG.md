@@ -1,3 +1,9 @@
+## 0.6.2 (2017-01-06)
+
+- Update assets to match upstream version
+
+Framework version: Pure v0.6.2
+
 ## 0.6.1 (2016-12-14)
 
 - Drop Compass support
