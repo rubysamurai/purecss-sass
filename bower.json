@@ -22,6 +22,7 @@
     "Gemfile",
     "README.md",
     "Rakefile",
+    "package.json",
     "purecss-sass.gemspec"
   ]
 }

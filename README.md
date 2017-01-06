@@ -40,7 +40,7 @@ Restart Rails web server if it was running and now your Rails application is pow
 
 To install `purecss-sass` Bower package execute this command:
 ```
-bower install purecss-sass#0.6.1+2
+bower install purecss-sass
 ```
 
 Then you will have a local copy of `purecss-sass` stylesheets to use in your application.
