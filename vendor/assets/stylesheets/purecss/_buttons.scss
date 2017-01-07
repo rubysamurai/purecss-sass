@@ -67,19 +67,19 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
-  color: #444;
+  color: $pure-button-color;
 
   /* rgba not supported (IE 8) */
-  color: rgba(0, 0, 0, 0.8);
+  color: $pure-button-color-ie;
 
   /* rgba supported */
-  border: 1px solid #999;
+  border: $pure-button-border-rgb;
 
   /*IE 6/7/8*/
-  border: none rgba(0, 0, 0, 0);
+  border: $pure-button-border-ieold;
 
   /*IE9 + everything else*/
-  background-color: #E6E6E6;
+  background-color:$pure-button-color-ie-nineplus;
   text-decoration: none;
   border-radius: 2px;
 }
@@ -116,13 +116,13 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
 .pure-button-active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-  border-color: #000 \9;
+  border-color: $pure-button-active-border-color;
 }
 
 .pure-button {
   &:active {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-    border-color: #000 \9;
+    border-color: $pure-button-active-border-color;
   }
 
   &[disabled] {
@@ -173,14 +173,14 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 }
 
 .pure-button-primary, .pure-button-selected {
-  background-color: rgb(0, 120, 231);
-  color: #fff;
+  background-color:$pure-button-primary-background-color;
+  color:$pure-button-primary-color;
 }
 
 a {
   &.pure-button-primary, &.pure-button-selected {
-    background-color: rgb(0, 120, 231);
-    color: #fff;
+    background-color: $pure-link-button-primary-background-color;
+    color: $pure-link-button-primary-color;
   }
 }
 

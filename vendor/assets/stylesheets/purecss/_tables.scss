@@ -10,17 +10,17 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  border: 1px solid #cbcbcb;
+  border:$pure-table-border;
 
   caption {
-    color: #000;
+    color: $pure-table-caption-color;
     font: italic 85%/1 arial, sans-serif;
     padding: 1em 0;
     text-align: center;
   }
 
   td, th {
-    border-left: 1px solid #cbcbcb;
+    border-left: $pure-table-th-border;
 
     /*  inner column border */
     border-width: 0 0 0 1px;
@@ -39,14 +39,14 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   }
 
   thead {
-    background-color: #e0e0e0;
-    color: #000;
+    background-color: $pure-table-thead-background-color;
+    color: $pure-table-thead-color;
     text-align: left;
     vertical-align: bottom;
   }
 
   td {
-    background-color: transparent;
+    background-color: $pure-table-td-background-color;
   }
 }
 
@@ -60,7 +60,7 @@ striping:
 */
 
 .pure-table-odd td, .pure-table-striped tr:nth-child(2n-1) td {
-  background-color: #f2f2f2;
+  background-color: $pure-table-stripped-background-color;
 }
 
 /* nth-child selector for modern browsers */
@@ -69,7 +69,7 @@ striping:
 
 .pure-table-bordered {
   td {
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: $pure-table-bordered-border;
   }
 
   tbody > tr:last-child > td {
@@ -82,7 +82,7 @@ striping:
 .pure-table-horizontal {
   td, th {
     border-width: 0 0 1px 0;
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: $pure-table-horizontal-border-bottom;
   }
 
   tbody > tr:last-child > td {
