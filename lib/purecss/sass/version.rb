@@ -1,5 +1,5 @@
 module Purecss
   module Sass
-    VERSION = '0.6.2'
+    VERSION = '1.0.0'.freeze
   end
 end

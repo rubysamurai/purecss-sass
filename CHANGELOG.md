@@ -1,3 +1,9 @@
+## 1.0.0 (2017-06-09)
+
+- Update assets to match upstream version
+
+Framework version: Pure v1.0.0
+
 ## 0.6.2 (2017-01-06)
 
 - Update assets to match upstream version
