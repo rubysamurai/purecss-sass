@@ -1,7 +1,7 @@
 {
   "name": "purecss-sass",
-  "version": "1.0.0",
-  "description": "Pure CSS framework by Yahoo, converted to Sass and ready to use in Sass powered applications",
+  "version": "1.0.1",
+  "description": "Pure CSS framework, converted to Sass and ready to use in Sass powered applications",
   "keywords": [
     "pure",
     "purecss",

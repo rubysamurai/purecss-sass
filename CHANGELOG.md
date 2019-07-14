@@ -1,3 +1,10 @@
+## 1.0.1 (2019-07-14)
+
+- Update assets to match upstream version
+- Drop bower support
+
+Framework version: Pure v1.0.1
+
 ## 1.0.0 (2017-06-09)
 
 - Update assets to match upstream version
