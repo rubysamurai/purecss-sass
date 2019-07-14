@@ -1,8 +1,8 @@
 /*!
-Pure v1.0.0
+Pure v1.0.1
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
-https://github.com/yahoo/pure/blob/master/LICENSE.md
+https://github.com/pure-css/pure/blob/master/LICENSE.md
 */
 /*!
 normalize.css v^3.0 | MIT License | git.io/normalize
@@ -215,6 +215,7 @@ figure {
  */
 
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -337,6 +338,7 @@ input {
   line-height: normal;
 
   &[type="checkbox"], &[type="radio"] {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 
     /* 1 */
@@ -355,6 +357,7 @@ input {
     -webkit-appearance: textfield;
 
     /* 1 */
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 
     /* 2 */

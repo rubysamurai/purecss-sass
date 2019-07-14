@@ -1,8 +1,8 @@
 /*!
-Pure v1.0.0
+Pure v1.0.1
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
-https://github.com/yahoo/pure/blob/master/LICENSE.md
+https://github.com/pure-css/pure/blob/master/LICENSE.md
 */
 
 .pure-table {
@@ -34,10 +34,6 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
     /* cell padding */
   }
 
-  td:first-child, th:first-child {
-    border-left-width: 0;
-  }
-
   thead {
     background-color: #e0e0e0;
     color: #000;
@@ -49,9 +45,6 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
     background-color: transparent;
   }
 }
-
-/* Consider removing this next declaration block, as it causes problems when
-there's a rowspan on the first cell. Case added to the tests. issue#432 */
 
 /*
 striping:

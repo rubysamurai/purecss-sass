@@ -1,8 +1,8 @@
 /*!
-Pure v1.0.0
+Pure v1.0.1
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
-https://github.com/yahoo/pure/blob/master/LICENSE.md
+https://github.com/pure-css/pure/blob/master/LICENSE.md
 */
 
 .pure-button {
@@ -19,6 +19,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   &::-moz-focus-inner {
@@ -85,29 +86,20 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 }
 
 .pure-button-hover {
-  /* csslint ignore:start */
-  filter: alpha(opacity = 90);
-
-  /* csslint ignore:end */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 
 .pure-button {
   &:hover {
-    /* csslint ignore:start */
-    filter: alpha(opacity = 90);
-
-    /* csslint ignore:end */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   }
 
   &:focus {
-    /* csslint ignore:start */
-    filter: alpha(opacity = 90);
-
-    /* csslint ignore:end */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
     outline: 0;
@@ -115,14 +107,16 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 }
 
 .pure-button-active {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-  border-color: #000 \9;
+  border-color: #000;
 }
 
 .pure-button {
   &:active {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-    border-color: #000 \9;
+    border-color: #000;
   }
 
   &[disabled] {
@@ -135,6 +129,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
     /* csslint ignore:end */
     opacity: 0.40;
     cursor: not-allowed;
+    -webkit-box-shadow: none;
     box-shadow: none;
     pointer-events: none;
   }
@@ -150,6 +145,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   /* csslint ignore:end */
   opacity: 0.40;
   cursor: not-allowed;
+  -webkit-box-shadow: none;
   box-shadow: none;
   pointer-events: none;
 
@@ -163,6 +159,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
     /* csslint ignore:end */
     opacity: 0.40;
     cursor: not-allowed;
+    -webkit-box-shadow: none;
     box-shadow: none;
     pointer-events: none;
   }

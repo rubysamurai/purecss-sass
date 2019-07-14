@@ -1,8 +1,8 @@
 /*!
-Pure v1.0.0
+Pure v1.0.1
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
-https://github.com/yahoo/pure/blob/master/LICENSE.md
+https://github.com/pure-css/pure/blob/master/LICENSE.md
 */
 /*csslint box-model:false*/
 /*
@@ -18,9 +18,11 @@ so we can ignore the csslint warning.
       padding: 0.5em 0.6em;
       display: inline-block;
       border: 1px solid #ccc;
+      -webkit-box-shadow: inset 0 1px 3px #ddd;
       box-shadow: inset 0 1px 3px #ddd;
       border-radius: 4px;
       vertical-align: middle;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
     }
   }
@@ -29,9 +31,11 @@ so we can ignore the csslint warning.
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 3px #ddd;
     box-shadow: inset 0 1px 3px #ddd;
     border-radius: 4px;
     vertical-align: middle;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -40,8 +44,10 @@ so we can ignore the csslint warning.
       padding: 0.5em 0.6em;
       display: inline-block;
       border: 1px solid #ccc;
+      -webkit-box-shadow: inset 0 1px 3px #ddd;
       box-shadow: inset 0 1px 3px #ddd;
       border-radius: 4px;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
     }
 
