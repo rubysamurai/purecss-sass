@@ -4,16 +4,15 @@
 [![npm version](https://badge.fury.io/js/purecss-sass.svg)](http://badge.fury.io/js/purecss-sass)
 [![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=master)](https://travis-ci.org/rubysamurai/purecss-sass)
 
-Yahoo's [Pure](http://purecss.io/) is a set of small, responsive CSS modules that you can use in every web project.
+[Pure](https://purecss.io/) is a set of small, responsive CSS modules that you can use in every web project.
 
-`purecss-sass` is a Sass-powered version of Pure CSS for your applications. It allows to include all of Pure components at once or load them individually. Tested and working with Ruby on Rails, Compass, Sprockets, Bower, npm etc.
+`purecss-sass` is a Sass-powered version of Pure CSS for your applications. It allows to include all of Pure's components at once or load them individually.
 
 Original Pure CSS files are converted using `sass-convert` and otherwise untouched and unmodified.
 
 ## Installation
 
 * [Ruby on Rails](#ruby-on-rails)
-* [Bower](#bower)
 * [npm](#npm)
 
 ### Ruby on Rails
@@ -35,15 +34,6 @@ Open `/app/assets/stylesheets/application.scss` file and add this line:
 > Note: Default Rails installation comes with `.css` file extension for stylesheet assests files, make sure you change it to `.scss` and remove all the `*= require_tree .` and `*= require_self` statements from file. Alternatively, to keep original `application.css` file, you can create `custom.scss` file in the same folder and import `purecss` there.
 
 Restart Rails web server if it was running and now your Rails application is powered by Pure CSS for Sass.
-
-### Bower
-
-To install `purecss-sass` Bower package execute this command:
-```
-bower install purecss-sass
-```
-
-Then you will have a local copy of `purecss-sass` stylesheets to use in your application.
 
 ### npm
 
@@ -72,20 +62,14 @@ You can import individual Sass components like this:
 
 ## Versioning
 
-Pure CSS for Sass follows the upstream version of Yahoo's Pure. But last version number may be ahead, in case there is a need to release project specific changes.
-
-Please always refer to the [CHANGELOG](https://github.com/rubysamurai/purecss-sass/blob/master/CHANGELOG.md) when upgrading.
-
-## Contributing
-
-Anyone is welcome to contribute to Pure CSS for Sass. Please [raise an issue](https://github.com/rubysamurai/purecss-sass/issues), fork the project, make changes to your forked repository and submit a pull request.
+Pure CSS for Sass follows the upstream version of Pure. But last version number may be ahead, in case there is a need to release project specific changes.
 
 ## Credits
 
-Pure CSS for Sass is inspired from [bootstrap-sass](https://github.com/twbs/bootstrap-sass) by Twitter Bootstrap team.
+Pure CSS for Sass is inspired from [bootstrap-sass](https://github.com/twbs/bootstrap-sass) by Bootstrap team.
 
 ## License
 
-Pure © 2014 Yahoo! Inc. Released under a [BSD](https://github.com/yahoo/pure/blob/master/LICENSE.md) license.
+Pure © Yahoo! Inc. Licensed under the [BSD](https://github.com/pure-css/pure/blob/master/LICENSE) license.
 
-`purecss-sass` © 2015 Dmitriy Tarasov. Released under a [MIT](https://github.com/rubysamurai/purecss-sass/blob/master/LICENSE.txt) licence.
+`purecss-sass` © Dmitriy Tarasov. Licensed under the [MIT](https://github.com/rubysamurai/purecss-sass/blob/master/LICENSE.txt) licence.
