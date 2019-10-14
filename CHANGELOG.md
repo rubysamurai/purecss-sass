@@ -1,3 +1,9 @@
+## 1.0.1.1 (2019-10-14)
+
+- Replace `sass` dependency with `sassc`.
+
+Framework version: Pure v1.0.1
+
 ## 1.0.1 (2019-07-14)
 
 - Update assets to match upstream version
