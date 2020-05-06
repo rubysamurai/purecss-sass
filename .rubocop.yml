@@ -1,0 +1,27 @@
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Metrics/BlockLength:
+  ExcludedMethods: [RSpec.describe, context]
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/ParameterLists:
+  Max: 6
+
+Naming/FileName:
+  Exclude:
+    - lib/*
+
+Naming/MethodParameterName:
+  MinNameLength: 2
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never

@@ -11,4 +11,4 @@ require 'purecss-sass'
 # Pry.start
 
 require 'irb'
-IRB.start
+IRB.start(__FILE__)

@@ -1,12 +1,14 @@
 /.bundle/
 /.sass-cache/
 /.yardoc
-/Gemfile.lock
 /_yardoc/
 /coverage/
 /doc/
+/Gemfile.lock
 /pkg/
-/spec/support/dummy_rails_app/log/
-/spec/support/dummy_rails_app/tmp/
 /spec/reports/
+/spec/support/dummy_rails_app/log/
+/spec/support/dummy_rails_app/public/
+/spec/support/dummy_rails_app/tmp/
 /tmp/
+.rspec_status
