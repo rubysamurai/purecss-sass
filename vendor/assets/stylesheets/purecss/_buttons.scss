@@ -1,5 +1,5 @@
 /*!
-Pure v1.0.1
+Pure v2.0.0
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE.md
@@ -8,7 +8,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .pure-button {
   /* Structure */
   display: inline-block;
-  zoom: 1;
   line-height: normal;
   white-space: nowrap;
   vertical-align: middle;
@@ -19,7 +18,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   &::-moz-focus-inner {
@@ -36,12 +34,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   letter-spacing: -0.31em;
 
   /* Webkit: collapse white-space between units */
-  *letter-spacing: normal;
-
-  /* reset IE < 8 */
-  *word-spacing: -0.43em;
-
-  /* IE < 8: collapse white-space between units */
   text-rendering: optimizespeed;
 
   /* Webkit: fixes text-rendering: optimizeLegibility */
@@ -86,35 +78,27 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .pure-button-hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
-  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 
 .pure-button {
   &:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
-    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   }
 
   &:focus {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
-    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
     outline: 0;
   }
 }
 
 .pure-button-active {
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
   border-color: #000;
 }
 
 .pure-button {
   &:active {
-    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
     border-color: #000;
   }
@@ -122,14 +106,8 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   &[disabled] {
     border: none;
     background-image: none;
-
-    /* csslint ignore:start */
-    filter: alpha(opacity = 40);
-
-    /* csslint ignore:end */
     opacity: 0.40;
     cursor: not-allowed;
-    -webkit-box-shadow: none;
     box-shadow: none;
     pointer-events: none;
   }
@@ -138,28 +116,16 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .pure-button-disabled {
   border: none;
   background-image: none;
-
-  /* csslint ignore:start */
-  filter: alpha(opacity = 40);
-
-  /* csslint ignore:end */
   opacity: 0.40;
   cursor: not-allowed;
-  -webkit-box-shadow: none;
   box-shadow: none;
   pointer-events: none;
 
   &:hover, &:focus, &:active {
     border: none;
     background-image: none;
-
-    /* csslint ignore:start */
-    filter: alpha(opacity = 40);
-
-    /* csslint ignore:end */
     opacity: 0.40;
     cursor: not-allowed;
-    -webkit-box-shadow: none;
     box-shadow: none;
     pointer-events: none;
   }
