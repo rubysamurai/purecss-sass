@@ -13,10 +13,9 @@
     "url": "https://github.com/rubysamurai/purecss-sass/issues"
   },
   "license": "MIT",
-  "author": "Dmitriy Tarasov",
+  "author": "Dmitriy Tarasov <info@rubysamurai.com>",
   "files": [
-    "vendor",
-    "LICENSE.txt"
+    "vendor"
   ],
   "main": "vendor/assets/stylesheets/_purecss.scss",
   "repository": {
