@@ -1,5 +1,5 @@
 /*!
-Pure v2.0.1
+Pure v2.0.2
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE.md
@@ -60,18 +60,8 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
-  color: #444;
-
-  /* rgba not supported (IE 8) */
   color: rgba(0, 0, 0, 0.8);
-
-  /* rgba supported */
-  border: 1px solid #999;
-
-  /*IE 6/7/8*/
   border: none rgba(0, 0, 0, 0);
-
-  /*IE9 + everything else*/
   background-color: #E6E6E6;
   text-decoration: none;
   border-radius: 2px;
@@ -152,9 +142,6 @@ a {
 .pure-button-group .pure-button {
   margin: 0;
   border-radius: 0;
-  border-right: 1px solid #111;
-
-  /* fallback color for rgba() for IE7/8 */
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 
   &:first-child {
