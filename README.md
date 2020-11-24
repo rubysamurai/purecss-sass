@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/purecss-sass.svg)](https://badge.fury.io/rb/purecss-sass)
 [![npm version](https://badge.fury.io/js/purecss-sass.svg)](https://badge.fury.io/js/purecss-sass)
-[![Build Status](https://travis-ci.com/rubysamurai/purecss-sass.svg?branch=master)](https://travis-ci.com/rubysamurai/purecss-sass)
+[![CI](https://github.com/rubysamurai/purecss-sass/workflows/CI/badge.svg)](https://github.com/rubysamurai/purecss-sass/actions?query=workflow%3ACI)
 
 `purecss-sass` is a Sass-powered version of [Pure CSS](https://purecss.io/) for your applications, allowing to include all of Pure's components at once or load them individually.
 
