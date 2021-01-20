@@ -1,3 +1,15 @@
+## 2.0.5 (2021-01-21)
+
+- Update assets to match upstream version
+
+Framework version: Pure v2.0.5
+
+## 2.0.4 (2021-01-20)
+
+- Update assets to match upstream version
+
+Framework version: Pure v2.0.4
+
 ## 2.0.3 (2020-05-12)
 
 - Update assets to match upstream version
