@@ -1,5 +1,5 @@
 /*!
-Pure v2.2.0
+Pure v3.0.0
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE
@@ -65,7 +65,6 @@ h1 {
  */
 
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 
   /* 1 */
@@ -265,7 +264,6 @@ fieldset {
  */
 
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   /* 1 */
@@ -308,7 +306,6 @@ textarea {
  */
 
 [type="checkbox"], [type="radio"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   /* 1 */
