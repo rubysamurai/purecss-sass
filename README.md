@@ -42,18 +42,19 @@ Open `/app/assets/stylesheets/application.scss` file and add this line:
 
 ## Usage
 
-By default, using `@import 'purecss';`, all of Pure CSS **responsive components** are imported.
+By default, using `@import 'purecss';`, all of Pure CSS components are imported except non-responsive forms, which are identical to responsive forms minus media queries.
 
 You can import individual Sass components like this:
 
 ```scss
-@import 'purecss/base';
-@import 'purecss/buttons';
-@import 'purecss/forms';
-@import 'purecss/grids';
-@import 'purecss/grids-responsive';
-@import 'purecss/menus';
-@import 'purecss/tables';
+@import 'purecss/base';             // Base
+@import 'purecss/buttons';          // Buttons
+@import 'purecss/forms';            // Forms (Responsive)
+@import 'purecss/forms-nr';         // Forms (Non-Responsive)
+@import 'purecss/grids';            // Grids (Base)
+@import 'purecss/grids-responsive'; // Grids (Responsive)
+@import 'purecss/menus';            // Menus (Responsive)
+@import 'purecss/tables';           // Tables
 ```
 
 ## Versioning
