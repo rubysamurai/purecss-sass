@@ -1,3 +1,10 @@
+## 3.0.1 (2023-05-06)
+
+- fix: include forms-nr module
+- fix: include grids module in the default import
+
+Framework version: Pure v3.0.0
+
 ## 3.0.0 (2022-10-27)
 
 - Update assets to match upstream version
