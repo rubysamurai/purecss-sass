@@ -1,21 +1,25 @@
+AllCops:
+  TargetRubyVersion: 2.2
+  NewCops: enable
+
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 
-Metrics/BlockLength:
-  ExcludedMethods: [RSpec.describe, context]
-
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
 
+Metrics/BlockLength:
+  Enabled: false
+
 Metrics/ParameterLists:
-  Max: 6
+  Enabled: false
 
 Naming/FileName:
   Exclude:
     - lib/*
 
 Naming/MethodParameterName:
-  MinNameLength: 2
+  Enabled: false
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
@@ -24,4 +28,4 @@ Style/Documentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: never
+  Enabled: false

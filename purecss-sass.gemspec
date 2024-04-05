@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata['bug_tracker_uri'] = 'https://github.com/rubysamurai/purecss-sass/issues'
   spec.metadata['changelog_uri'] = 'https://github.com/rubysamurai/purecss-sass/blob/master/CHANGELOG.md'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
