@@ -9,7 +9,7 @@ RSpec.describe 'Sass C compilation' do
       syntax: :scss
     )
     expect {
-      File.open("tmp/#{file}.css", 'w') { |f| f.write(sass_engine.render) }
+      File.write("tmp/#{file}.css", sass_engine.render)
     }.not_to raise_error
   end
 end
