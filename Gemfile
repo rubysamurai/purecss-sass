@@ -4,3 +4,4 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'loofah', '<= 2.20.0' if RUBY_VERSION <= '2.5.0'
+gem 'rubocop', require: false

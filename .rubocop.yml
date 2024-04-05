@@ -1,6 +1,7 @@
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.0
   NewCops: enable
+  SuggestExtensions: false
 
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
